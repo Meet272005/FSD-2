@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function call() {
+        var a = '{"name":"ABC","DOB":"1998-09-07"}'
+        var ap = JSON.parse(a)
+        document.getElementById('p1').innerHTML = new Date(ap.DOB)
+      }
+    </script>
+  </head>
+  <body>
+    <p id="p1">Get Date</p>
+    <button onclick="call()">CLICK HERE</button>
+  </body>
+</html>

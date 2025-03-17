@@ -1,0 +1,8 @@
+{
+  "name": "Test",
+  "age": 20, 
+  "ispass": true, 
+  "subject": { "FSD2": "NAS", "FCSP": "TAT" }, 
+  "marks": [25, 23, 21],
+  "test": null
+}

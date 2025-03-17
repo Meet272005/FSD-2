@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var test = {
+        division1: {
+          name: ['Z', 'B', 'H']
+        },
+        division2: {
+          name: ['Y', 'A', 'G']
+        }
+      }
+      const d1 = test.division1.name
+      const d2 = test.division2.name
+      const d = d1.concat(d2).sort()
+      for (i of d) {
+        console.log(i)
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

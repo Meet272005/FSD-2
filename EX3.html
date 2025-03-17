@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      a = {
+        FSD: [
+          {
+            Topic: 'HTML',
+            course: 'Beginer',
+            content: ['tags', 'table', 'form']
+          },
+          {
+            Topic: 'CSS',
+            course: 'Beginer',
+            content: ['tags', 'table', 'form']
+          }
+        ]
+      }
+
+      for (i in a.FSD) {
+        for (j in a.FSD[i]) {
+          document.writeln(a.FSD[i][j] + '<br>')
+        }
+      }
+
+      for (x of a.FSD) {
+        document.writeln(x.Topic + '<br>')
+        document.writeln(x.course + '<br>')
+        document.writeln(x.content + '<br>')
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
