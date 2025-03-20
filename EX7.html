@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const person = [
+        { name: 'NAS', height: 5.2 },
+        { name: 'ABC', height: 5.5 },
+        {
+          name: 'XYZ',
+          height: 6.0
+        }
+      ]
+      console.log(person.sort((a, b) => b.height - a.height)[0]['height'])
+      // OR
+      console.log(Math.max(...person.map(obj => obj.height)))
+    </script>
+  </head>
+  <body></body>
+</html>
