@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function add(a, b) {
+        document.getElementById('test1').innerHTML = a + b
+      }
+      var a = 2
+      var b = 3
+      setInterval(() => add(++a, ++b), 1000)
+    </script>
+  </head>
+  <body>
+    <h2 id="test1">Print Here</h2>
+  </body>
+</html>

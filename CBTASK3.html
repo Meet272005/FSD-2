@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="test"></p>
+    <script>
+      function add(sum) {
+        document.getElementById('test').innerHTML = sum + ''
+      }
+
+      function calc(n1, n2, cb) {
+        sum = n1 + n2
+        cb(sum)
+      }
+      calc(10, 30, add)
+    </script>
+  </body>
+</html>

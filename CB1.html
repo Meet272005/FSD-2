@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var test = function () {
+        console.log('Hi')
+      }
+      setTimeout(test, 3000)
+      setTimeout(function () {
+        console.log('hello')
+      }, 5000)
+      setTimeout(() => {
+        console.log('Test')
+      }, 2000)
+      function test1() {
+        console.log('Testing')
+      }
+      setTimeout(test1, 6000)
+
+      function change() {
+        i = document.getElementById('head')
+        i.innerHTML = 'WELCOME'
+      }
+      setTimeout(change, 5000)
+    </script>
+  </head>
+  <body>
+    <h1 id="head">HELLO</h1>
+  </body>
+</html>

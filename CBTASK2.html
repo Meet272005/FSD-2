@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var size = 16
+      function increase() {
+        size = size + 1
+        if (size <= 100) {
+          document.getElementById('t1').style.fontSize = size + 'px'
+        }
+      }
+
+      function decrease() {
+        size = size - 1
+        if (size > 15) {
+          document.getElementById('t1').style.fontSize = size + 'px'
+        }
+      }
+
+      function test(a) {
+        if (a == 'inc') {
+          t = setInterval(increase, 100)
+        } else {
+          t = setInterval(decrease, 100)
+        }
+      }
+
+      function stop() {
+        clearInterval(t)
+      }
+    </script>
+  </head>
+  <body>
+    <p id="t1">Welcome</p>
+    <button onclick="test('inc')">INCREASE</button>
+    <button onclick="test('dec')">DECREASE</button>
+    <button onclick="stop()">STOP</button>
+  </body>
+</html>
