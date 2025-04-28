@@ -10,4 +10,7 @@ app.use('/cp', (req, res) => {
   res.cookie('brach', 'CSE')
   res.cookie('topic', 'cookie')
   res.clearCookie('topic')
+  res.send(req.cookies)
 })
+
+app.listen(7005)
