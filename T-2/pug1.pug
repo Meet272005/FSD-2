@@ -1,0 +1,51 @@
+html 
+    head    
+        title first 
+    body
+        h1 Hello 
+        p 
+            b Test 
+        h3 
+            i Testing
+        h3 Test 
+        |Hello 
+        |Sem FSD 2
+        h4(style="color:red;font-size:60px;") Pug Example
+        ul(type='square')
+            li Mango
+            li Banana
+        a(href="/",target='_blank',style="color:purple") Home
+        a(
+            href="/"
+            target="_blank"
+            style="color:pink"
+        ) Home
+        // buffered comment
+        //- unbuffered comment
+        //
+            multi
+            line
+            comments
+        br
+        br
+        table(border="2px",cellpadding="20",style="border:solid blue;")  
+            tr      
+                td ABC 
+                td 123
+            tr  
+                td XYZ 
+                td 456
+        // unbuffered code
+        -var num=3
+        -var color='black'
+        -var list=["India","USA"]
+
+        //buffered code
+        h4='Multiplcation: '+num*10 
+        h2="color:"+color 
+        p="Country"+list[0]
+
+        form(method="post" action="/data")
+            input(type="text" name="un" )
+            input(type="password" name="pw")
+            input(type="submit" class="a")
